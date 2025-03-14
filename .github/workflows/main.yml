@@ -2,7 +2,7 @@ name: 'Update schedule'
 
 on:
   schedule:
-    - cron: '0 5 * * *'
+    - cron: '0 0,12 * * *'
   workflow_dispatch:
     branches:
       - master
@@ -67,7 +67,7 @@ jobs:
             from utils.config import config
             final_file = config.final_file
           except: 
-            final_file = "output/result.txt"
+            final_file = "output/list.txt"
           print(final_file)')
           final_m3u_file=$(python -c '
           try: 
@@ -76,7 +76,7 @@ jobs:
             final_file = config.final_file
             final_m3u_file = os.path.splitext(final_file)[0] + ".m3u"
           except: 
-            final_m3u_file = "output/result.m3u"
+            final_m3u_file = "output/list.m3u"
           print(final_m3u_file)')
           if [[ -f "$final_file" ]]; then
             git add -f "$final_file"
