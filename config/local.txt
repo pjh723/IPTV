@@ -2,11 +2,11 @@
 # 支持设置白名单：接口后添加$!
 # The local source list, one line per source, format: channel name, interface address
 # Support setting whitelist: add $! after the interface
-大爱-TV1,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
-大爱-TV2,https://pulltv2.wanfudaluye.com/live/tv2.m3u8
-韩国-Arirang-TV,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
-韩国TV-Chosun2,http://onair2.cdn.tvchosun.com/origin2/_definst_/tvchosun_s3/playlist.m3u8
-俄罗斯-TKR,http://live.tkr.cdnvideo.ru/tkr/tkr.sdp/playlist.m3u8
+DaAi 1,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
+DaAi 2,https://pulltv2.wanfudaluye.com/live/tv2.m3u8
+Arirang TV,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+TV Chosun2,http://onair2.cdn.tvchosun.com/origin2/_definst_/tvchosun_s3/playlist.m3u8
+TKR,http://live.tkr.cdnvideo.ru/tkr/tkr.sdp/playlist.m3u8
 倩女幽魂妖魔道,http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8
 倩女幽魂人间道,http://jsmov2.a.yximgs.com/bs3/video-hls/5250634317044855747_hlsb.m3u8
 倩女幽魂道道道,http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8
