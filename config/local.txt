@@ -2,14 +2,11 @@
 # 支持设置白名单：接口后添加$!
 # The local source list, one line per source, format: channel name, interface address
 # Support setting whitelist: add $! after the interface
-🌊港·澳·台·外,#genre#
 大爱-TV1,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
 大爱-TV2,https://pulltv2.wanfudaluye.com/live/tv2.m3u8
 韩国-Arirang-TV,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 韩国TV-Chosun2,http://onair2.cdn.tvchosun.com/origin2/_definst_/tvchosun_s3/playlist.m3u8
 俄罗斯-TKR,http://live.tkr.cdnvideo.ru/tkr/tkr.sdp/playlist.m3u8
-
-观影频道,#genre#
 倩女幽魂妖魔道,http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8
 倩女幽魂人间道,http://jsmov2.a.yximgs.com/bs3/video-hls/5250634317044855747_hlsb.m3u8
 倩女幽魂道道道,http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8
@@ -36,12 +33,10 @@
 威尼斯惊魂夜（普通话）,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/240/280/5105240280/media/5105240280_5221635639_56.mp4
 火山挚恋,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/219/142/5105219142/media/5105219142_5216816716_56.mp4
 火山挚恋（普通话）,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/219/320/5105219320/media/5105219320_5216817669_56.mp4
-金爵电影论坛：开幕论坛，光影连接世界与中国,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/128/221/5105128221/media/5105128225136334098_56.mp4
 奥本海默,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/210/263/5105210263/media/5105210263_5218204577_56.mp4
 禁锢,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/139/123/5105139123/media/5105139123_5196361338_56.mp4
 茶啊二中,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/187/764/5105187764/media/5105187764_5179792273_56.mp4
 奥本海默（普通话）,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/210/264/5105210264/media/5105210264_5218205065_56.mp4
-第25届上海国际电影节金爵盛典内场,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/128/212/5105128212/media/5105128212_5135498509_56.mp4
 长安三万里,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/194/082/5105194082/media/5105194082_5185169968_56.mp4
 玩命三日,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5102/497/804/5102497804/media/5102497804_5010862977_56.mp4
 GT赛车：极速狂飙,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/219/049/5105219049/media/5105219049_5211432582_56.mp4
@@ -55,7 +50,7 @@ GT赛车：极速狂飙（普通话）,https://hlsdofviewmgspvod.aikan.miguvideo
 别叫我“赌神”,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/152/230/5105152230/media/5105152230_5160978257_56.mp4
 疯狂元素城（普通话）,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/200/333/5105200333/media/5105200333_5208770236_56.mp4
 银河护卫队3,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/119/953/5105119953/media/5105119953_5165542739_56.mp4
-谁杀死了尼尔森先生？,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/277/132/5105277132/media/5105277132_5228360009_56.mp4
+谁杀死了尼尔森先生,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/277/132/5105277132/media/5105277132_5228360009_56.mp4
 欢喜哥的春天,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5103/454/927/5103454927/media/5103454927_5010377798_56.mp4
 一起走过,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5103/405/394/5103405394/media/5103405394_5009985072_56.mp4
 人生路不熟,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/137/131/5105137131/media/5105137135146366209_56.mp4
@@ -133,7 +128,6 @@ GT赛车：极速狂飙（普通话）,https://hlsdofviewmgspvod.aikan.miguvideo
 奇迹小子,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/046/887/5105046887/media/5105046887_5075571066_56.mp4
 老人与经书,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/041/858/5105041858/media/5105041858_5048162532_56.mp4
 厨师杰克冒险记,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/217/543/5105217543/media/5105217543_5212639156_56.mp4
-第25届上海国际电影节金爵奖颁奖典礼内场,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/128/217/5105128217/media/5105128217_5140316466_56.mp4
 银河护卫队：假日特辑,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/240/451/5105240451/media/5105240455217249672_56.mp4
 别让我走,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/044/341/5105044341/media/5105044345049915642_56.mp4
 因爱而伟大,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/044/202/5105044202/media/5105044202_50481814856.mp4
