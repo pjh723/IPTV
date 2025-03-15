@@ -2,19 +2,19 @@
 # 支持设置白名单：接口后添加$!
 # The local source list, one line per source, format: channel name, interface address
 # Support setting whitelist: add $! after the interface
-台湾,#genre#
+🎥台湾,#genre#
 美丽人生-TV,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
 大爱-TV1,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
 大爱-TV2,https://pulltv2.wanfudaluye.com/live/tv2.m3u8
 大立-TV,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
-韩国,#genre#
+🎥韩国,#genre#
 Good-TV,http://mobliestream.c3tv.com:1935/live/goodtv.sdp/playlist.m3u8
 Arirang-TV,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
-KBS-LiveCam DokDo,http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
-KBS-News D,https://code.vthanhtivi.pw/getlink/kbs/81/playlist.m3u8
+KBSLiveCam-DokDo,http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
+KBSNews-D,https://code.vthanhtivi.pw/getlink/kbs/81/playlist.m3u8
 TV-Chosun2,http://onair2.cdn.tvchosun.com/origin2/_definst_/tvchosun_s3/playlist.m3u8
-俄罗斯,#genre#
-Astrahan.Ru-TV,https://streaming.astrakhan.ru/astrakhanrulivehd/playlist.m3u8
+🎥俄罗斯,#genre#
+Astrahan-Ru-TV,https://streaming.astrakhan.ru/astrakhanrulivehd/playlist.m3u8
 Samara-GIS,http://45.67.57.9:8080/new/new/playlist.m3u8
 TKR,http://live.tkr.cdnvideo.ru/tkr/tkr.sdp/playlist.m3u8
 观影频道,#genre#
