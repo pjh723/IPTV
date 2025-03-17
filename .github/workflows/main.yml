@@ -59,8 +59,8 @@ jobs:
         run: pipenv run dev
       - name: Commit and push if changed
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "1242513929@qq.com"
+          git config --local user.name "github_update_IPTV"
           git diff
           final_file=$(python -c '
           try: 
