@@ -2,7 +2,7 @@ name: 'Update schedule'
 
 on:
   schedule:
-    - cron: '0 0,9 * * *'
+    - cron: '0 10 * * *'
   workflow_dispatch:
     branches:
       - master
@@ -60,7 +60,7 @@ jobs:
       - name: Commit and push if changed
         run: |
           git config --local user.email "1242513929@qq.com"
-          git config --local user.name "github_update_IPTV"
+          git config --local user.name "github-actions[bot]"
           git diff
           final_file=$(python -c '
           try: 
