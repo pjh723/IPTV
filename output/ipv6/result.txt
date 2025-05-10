@@ -82,4 +82,4 @@ CCTV-5+,http://www.freetv.top/migu/641886773.m3u8?migutoken=752524a725f1fe3e2f85
 倩女幽魂道道道,http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8$本地源
 
 🕘️更新时间,#genre#
-2025-05-09 18:46:23,https://cdn5.163189.xyz/live/cctv1/stream.m3u8$订阅源
+2025-05-10 18:44:09,https://cdn5.163189.xyz/live/cctv1/stream.m3u8$订阅源
