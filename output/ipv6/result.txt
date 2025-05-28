@@ -82,4 +82,4 @@ CCTV-5+,http://php.jdshipin.com/itv6.php?cid=ystenlive&id=1000000001000018504$�
 倩女幽魂道道道,http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8$本地源
 
 🕘️更新时间,#genre#
-2025-05-27 18:40:32,https://cdn5.163189.xyz/live/cctv1/stream.m3u8$订阅源
+2025-05-28 18:39:24,https://cdn5.163189.xyz/live/cctv1/stream.m3u8$订阅源
