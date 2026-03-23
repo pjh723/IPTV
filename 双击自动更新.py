@@ -284,7 +284,7 @@ def parse_content(content):
     )
 
 # ===================== 保存与推送 =====================
-def save_to_txt(df, filename='list.txt'):
+def save_to_txt(df, filename='list_txt.m3u'):
     """保存为 TXT 格式"""
     ys = ['🔹央视频道🔹,#genre#']
     ws = ['🔹卫视频道🔹,#genre#']
