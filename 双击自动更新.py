@@ -8,11 +8,9 @@ import subprocess
 from datetime import datetime
 from pypinyin import lazy_pinyin
 
-
 # ===================== 配置区 =====================
 # Git 仓库目录
 GIT_REPO_DIR= os.path.dirname(os.path.abspath(__file__))
-print("脚本所在目录：", GIT_REPO_DIR)
 
 # 源地址列表
 SOURCE_URLS = [
@@ -153,7 +151,7 @@ def sort_cctv_channels(df):
     return pd.concat([cctv_sorted, other_sorted], ignore_index=True)
 
 # ===================== 地址有效性检测 =====================
-def is_url_valid(url, timeout=2):
+def is_url_valid(url, timeout=3):
     """检测 URL 是否有效"""
     try:
         clean_url = url.split('$')[0]
@@ -163,6 +161,7 @@ def is_url_valid(url, timeout=2):
         return valid
     except:
         return False
+
 
 def filter_valid_streams(df, max_workers=50):
     """多线程过滤有效流地址"""
@@ -186,13 +185,14 @@ def filter_valid_streams(df, max_workers=50):
                 print(f"✅ [{count}/{total}/有效:{valid_count}] {row['program_name']} -> 有效")
             else:
                 print(f"❌ [{count}/{total}/有效:{valid_count}] {row['program_name']} -> 失效")
-
-    print(f"\n🎯 检测完成：有效 {len(valid_list)} 个，失效 {total-len(valid_list)} 个")
+    speed = datetime.now().strftime("%Y-%m-%d %H:%M:%S 更新")
+    speed += f' [有效 {len(valid_list)}: 失效 {total-len(valid_list)}]'
     with open("更新日志.ini", "a", encoding="utf-8") as f:
-        f.write(f"[ {len(valid_list)} : {total-len(valid_list)} ]")
+        f.write(f"{speed}\n")
+    print(f"\n🎯 检测完成：{speed}")
     return pd.DataFrame(valid_list)
 
-# ===================== 爬取与解析 =====================
+# ===================== 获取与解析 =====================
 def _parse_line(line):
     """解析单行频道数据"""
     line = line.strip()
@@ -211,12 +211,12 @@ def _classify_channel(name):
         return '其他'
 
 def fetch_streams_from_url(url):
-    """从单个 URL 爬取并分类频道"""
-    print(f"\n正在爬取: {url}")
+    """从单个 URL 获取并分类频道"""
+    print(f"\n正在获取: {url}")
     try:
         resp = requests.get(url, timeout=15)
         if resp.status_code != 200:
-            print(f"爬取失败 {resp.status_code}")
+            print(f"获取失败 {resp.status_code}")
             return None
         text = resp.text
         ys, ws, qt = ['央视频道\n'], ['卫视频道\n'], ['其他频道\n']
@@ -250,11 +250,11 @@ def fetch_streams_from_url(url):
                     qt.append(f'{normalize_satellite_name(name)}, {url_txt}\n')
         return ''.join(ys) + '\n' + ''.join(ws) + '\n' + ''.join(qt)
     except requests.exceptions.RequestException as e:
-        print(f'爬取异常: {e}')
+        print(f'获取异常: {e}')
         return None
 
 def fetch_all_streams():
-    """批量爬取所有源"""
+    """批量获取所有源"""
     all_data = []
     for url in SOURCE_URLS:
         content = fetch_streams_from_url(url)
@@ -284,44 +284,44 @@ def parse_content(content):
     )
 
 # ===================== 保存与推送 =====================
-def save_to_txt(df, filename="list.txt"):
+def save_to_txt(df, filename='list.txt'):
     """保存为 TXT 格式"""
-    ys = ['央视频道,#genre#']
-    ws = ['卫视频道,#genre#']
-    qt = ['其他频道,#genre#']
-    ktv = ['盲盒点歌,#genre#', '\n盲盒点歌,https://2025.xn--jfx065ba424q.top/1.m3u8\n盲盒点歌1,https://2025.xn--jfx065ba424q.top/1.m3u8']
-
+    ys = ['🔹央视频道🔹,#genre#']
+    ws = ['🔹卫视频道🔹,#genre#']
+    qt = ['🔹其他频道🔹,#genre#']
+    ktv = ['🔹盲盒点歌🔹,#genre#', '\n盲盒点歌,https://2025.xn--jfx065ba424q.top/1.m3u8''\n盲盒点歌1,https://2025.xn--jfx065ba424q.top/1.m3u8']
+    
     for _, row in df.iterrows():
         line = f'{row["program_name"]},{row["stream_url"]}'
-        if row["program_name"].startswith("CCTV-"):
+        if row['program_name'].startswith('CCTV-'):
             ys.append(line)
-        elif "卫视" in row["program_name"]:
+        elif '卫视' in row['program_name']:
             ws.append(line)
         else:
             qt.append(line)
-
+    
     with open(filename, 'w', encoding='utf-8') as f:
         f.write('\n'.join(ys) + '\n\n' + '\n'.join(ws) + '\n\n' + '\n'.join(qt) + '\n\n' + '\n'.join(ktv))
-    print(f'📝 TXT 已保存: {os.path.abspath(filename)}')
+    print(f'\n📄 TXT 已保存: {os.path.abspath(filename)}')
 
-def save_to_m3u(df, filename="list.m3u"):
+def save_to_m3u(df, filename='list.m3u'):
     """保存为 M3U 格式"""
     with open(filename, 'w', encoding='utf-8') as f:
-        f.write('#EXTM3U\n# IPTV整合源\n')
+        f.write('#EXTM3U\n# 电视整合源\n')
         for _, row in df.iterrows():
-            name = row["program_name"]
-            url = row["stream_url"]
-            if name.startswith("CCTV-"):
-                group = "央视频道"
-            elif "卫视" in name:
-                group = "卫视频道"
+            name = row['program_name']
+            url = row['stream_url']
+            if name.startswith('CCTV-'):
+                group = '央视频道'
+            elif '卫视' in name:
+                group = '卫视频道'
             else:
-                group = "其他频道"
+                group = '其他频道'
             f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="{group}",{name}\n{url}\n')
         # 盲盒点歌
         f.write(f'#EXTINF:-1 tvg-name="盲盒点歌" group-title="盲盒点歌",盲盒点歌\nhttps://2025.xn--jfx065ba424q.top/1.m3u8\n')
         f.write(f'#EXTINF:-1 tvg-name="盲盒点歌1" group-title="盲盒点歌",盲盒点歌1\nhttps://2025.xn--jfx065ba424q.top/1.m3u8\n')
-    print(f'🎬 M3U 已保存: {os.path.abspath(filename)}')
+    print(f'📺 M3U 已保存: {os.path.abspath(filename)}')
 
 def push_gitee():
     """推送更新到 Gitee"""
@@ -339,38 +339,19 @@ def push_gitee():
 # ===================== 主程序 =====================
 if __name__ == '__main__':
     print('='*50)
-    print('IPTV源自动爬取+去重+多线程检测+排序+双格式保存（分源独立保存）')
+    print('  电视源自动获取+去重+多线程检测+排序+双格式保存')
     print('='*50)
-    now_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S 更新")
-    with open("更新日志.ini", "a", encoding="utf-8") as f:
-        f.write(f"\n{now_time} ")
-    # 遍历每个源，单独处理并保存
-    for idx, url in enumerate(SOURCE_URLS):
-        print(f"\n🔄 正在处理第 {idx+1} 个源: {url}")
-        content = fetch_streams_from_url(url)
-        if not content or not content.strip():
-            print(f"❌ 第 {idx+1} 个源无有效数据，跳过")
-            continue
 
-        df = parse_content(content)
-        if df.empty:
-            print(f"❌ 第 {idx+1} 个源解析后无数据，跳过")
-            continue
+    content = fetch_all_streams()
+    if not content.strip():
+        print('\n❌ 无有效数据')
+        exit()
 
-        df_valid = filter_valid_streams(df)
-        if df_valid.empty:
-            print(f"❌ 第 {idx+1} 个源无有效流地址，跳过")
-            continue
+    df = parse_content(content)
+    df_valid = filter_valid_streams(df)
+    df_sorted = sort_cctv_channels(df_valid)
 
-        df_sorted = sort_cctv_channels(df_valid)
-
-        # 生成带序号的文件名
-        txt_filename = f"txt{idx}.py" if idx > 0 else "list.txt"
-        m3u_filename = f"m3u{idx}.py" if idx > 0 else "list.m3u"
-
-        save_to_txt(df_sorted, txt_filename)
-        save_to_m3u(df_sorted, m3u_filename)
-        print(f"✅ 第 {idx+1} 个源处理完成，已保存为 {txt_filename} 和 {m3u_filename}")
-
+    save_to_txt(df_sorted)
+    save_to_m3u(df_sorted)
     push_gitee()
-    input("\n任务全部完成，按回车退出...")
+    input("任务全部完成，按回车退出...")
