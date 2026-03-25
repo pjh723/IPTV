@@ -256,10 +256,15 @@ def fetch_streams_from_url(url):
 def fetch_all_streams():
     """批量获取所有源"""
     all_data = []
+    i = 0
     for url in SOURCE_URLS:
         content = fetch_streams_from_url(url)
         if content:
             all_data.append(content)
+            i += 1
+            if i == 1:
+                print(f"保存列表首个源，地址：{url}")
+                save_file('\n'.join(all_data),filenameTXT='list.txt',filenameM3U='list.m3u')
         else:
             print(f"❌ 无效源: {url}")
     return '\n'.join(all_data)
@@ -284,7 +289,7 @@ def parse_content(content):
     )
 
 # ===================== 保存与推送 =====================
-def save_to_txt(df, filename='list_txt.m3u'):
+def save_to_txt(df, filenameTXT):
     """保存为 TXT 格式"""
     ys = ['🔹央视频道🔹,#genre#']
     ws = ['🔹卫视频道🔹,#genre#']
@@ -300,13 +305,13 @@ def save_to_txt(df, filename='list_txt.m3u'):
         else:
             qt.append(line)
     
-    with open(filename, 'w', encoding='utf-8') as f:
+    with open(filenameTXT, 'w', encoding='utf-8') as f:
         f.write('\n'.join(ys) + '\n\n' + '\n'.join(ws) + '\n\n' + '\n'.join(qt) + '\n\n' + '\n'.join(ktv))
-    print(f'\n📄 TXT 已保存: {os.path.abspath(filename)}')
+    print(f'\n📄 TXT 已保存: {os.path.abspath(filenameTXT)}')
 
-def save_to_m3u(df, filename='list.m3u'):
+def save_to_m3u(df, filenameM3U):
     """保存为 M3U 格式"""
-    with open(filename, 'w', encoding='utf-8') as f:
+    with open(filenameM3U, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n# 电视整合源\n')
         for _, row in df.iterrows():
             name = row['program_name']
@@ -321,7 +326,7 @@ def save_to_m3u(df, filename='list.m3u'):
         # 盲盒点歌
         f.write(f'#EXTINF:-1 tvg-name="盲盒点歌" group-title="盲盒点歌",盲盒点歌\nhttps://2025.xn--jfx065ba424q.top/1.m3u8\n')
         f.write(f'#EXTINF:-1 tvg-name="盲盒点歌1" group-title="盲盒点歌",盲盒点歌1\nhttps://2025.xn--jfx065ba424q.top/1.m3u8\n')
-    print(f'📺 M3U 已保存: {os.path.abspath(filename)}')
+    print(f'📺 M3U 已保存: {os.path.abspath(filenameM3U)}')
 
 def push_gitee():
     """推送更新到 Gitee"""
@@ -336,6 +341,14 @@ def push_gitee():
     except subprocess.CalledProcessError as e:
         print(f"❌ 推送失败: {e}")
 
+def save_file(content,filenameTXT,filenameM3U):
+    df = parse_content(content)
+    df_valid = filter_valid_streams(df)
+    df_sorted = sort_cctv_channels(df_valid)
+    save_to_txt(df_sorted,filenameTXT)
+    save_to_m3u(df_sorted,filenameM3U)
+
+
 # ===================== 主程序 =====================
 if __name__ == '__main__':
     print('='*50)
@@ -346,12 +359,6 @@ if __name__ == '__main__':
     if not content.strip():
         print('\n❌ 无有效数据')
         exit()
-
-    df = parse_content(content)
-    df_valid = filter_valid_streams(df)
-    df_sorted = sort_cctv_channels(df_valid)
-
-    save_to_txt(df_sorted)
-    save_to_m3u(df_sorted)
+    save_file(content,filenameTXT='all_txt.m3u',filenameM3U='all_m3u.m3u')
     push_gitee()
     input("任务全部完成，按回车退出...")
