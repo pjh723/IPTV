@@ -14,8 +14,8 @@ GIT_REPO_DIR= os.path.dirname(os.path.abspath(__file__))
 
 # 源地址列表
 SOURCE_URLS = [
-    "https://gitee.com/hzxs800274/iptv/raw/master/live/TV",
     "https://gitee.com/zwssina/yunduanyuan/raw/master/SB",
+    "https://gitee.com/hzxs800274/iptv/raw/master/live/TV",
     "https://gitee.com/gly358617629/iptv/raw/master/IPTV.txt",
     "https://gitee.com/gclgg/zubo/raw/main/IPTV.txt",
     "https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
