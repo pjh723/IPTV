@@ -17,11 +17,11 @@ SOURCE_URLS = [
     "https://gitee.com/zwssina/yunduanyuan/raw/master/SB",
     "https://gitee.com/gly358617629/iptv/raw/master/IPTV.txt",
     "https://gitee.com/hzxs800274/iptv/raw/master/live/TV",
-    "https://gitee.com/gclgg/zubo/raw/main/IPTV.txt",
-    "https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
-    "https://raw.githubusercontent.com/gclgg/iptv-api/refs/heads/master/output/result.m3u"
+    "https://gitee.com/gclgg/zubo/raw/main/IPTV.txt"
 ]
 
+    #"https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+    #"https://raw.githubusercontent.com/gclgg/iptv-api/refs/heads/master/output/result.m3u"
 # CCTV 名称规范化正则（批量生成，避免手写冗余）
 CCTV_CHANNELS = [
     "CCTV-1 综合", 
