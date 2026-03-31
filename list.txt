@@ -1,4 +1,5 @@
 🔹央视频道🔹,#genre#
+<<<<<<< HEAD
 CCTV-1 综合,http://rrs03.hw.gmcc.net:8088/PLTV/81/224/3221226737/1.m3u8
 CCTV-1 综合,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226737/1.m3u8
 CCTV-2 财经,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226739/1.m3u8
@@ -115,9 +116,16 @@ CCTV-17 农业农村,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226660/1.m3u
 云南卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226709/1.m3u8
 浙江卫视,http://rrs03.hw.gmcc.net:8088/PLTV/81/224/3221226690/1.m3u8
 浙江卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226690/1.m3u8
+=======
+
+🔹卫视频道🔹,#genre#
+凤凰卫视,http://api.kkhk.itv888.vip:8080/streams/vny1wblsnch/index.m3u8
+>>>>>>> 8146fc53cc366f549ac8953256e39b449520673e
 
 🔹其他频道🔹,#genre#
+Astro AEC,http://php.jdshipin.com:8880/smt.php?id=AEC
 ASTRO AOD,http://cdn9.163189.xyz/smt1.1.php?id=Aodhd
+<<<<<<< HEAD
 CGTN,http://rrs03.hw.gmcc.net:8088/PLTV/81/224/3221226666/1.m3u8
 CETV1,http://rrs03.hw.gmcc.net:8088/PLTV/81/224/3221226712/1.m3u8
 CETV1,http://rrs03.hw.gmcc.net:8088/PLTV/81/224/3221226673/1.m3u8
@@ -127,6 +135,15 @@ CETV4,http://rrs03.hw.gmcc.net:8088/PLTV/81/224/3221226724/1.m3u8
 HOY77,http://iptv.4666888.xyz/iptv2A.php?id=35
 HOY78,http://iptv.4666888.xyz/iptv2A.php?id=31
 HOY78电视家,http://huhu11.a1.luyouxia.net:26894/play/电视家/电视家.php?id=20079
+=======
+CHC动作电影2,http://api.kkhk.itv888.vip:8080/streams/tbqrnwqrilg/index.m3u8
+CHC家庭影院2,http://api.kkhk.itv888.vip:8080/streams/qja633ty8n/index.m3u8
+CHC影迷电影2,http://api.kkhk.itv888.vip:8080/streams/narc71xn3d/index.m3u8
+HOY77,http://iptv.4666888.xyz/iptv2A.php?id=35
+HOY78,http://iptv.4666888.xyz/iptv2A.php?id=31
+HOY78电视家,http://huhu11.a1.luyouxia.net:26894/play/电视家/电视家.php?id=20079
+MYTV黃金翡翠,http://iptv.4666888.xyz/iptv2A.php?id=32
+>>>>>>> 8146fc53cc366f549ac8953256e39b449520673e
 Now Sports 652,https://dko29we9nm1rd.cloudfront.net/hls/CH652/index.m3u8
 Now爆谷台,http://huhu11.a1.luyouxia.net:26894/play/电视家/电视家.php?id=20089
 Now新闻频道,http://cdn.163189.xyz/163189/now
@@ -135,15 +152,17 @@ RTHK31,http://iptv.4666888.xyz/iptv2A.php?id=23
 SPOTV,http://iptv.4666888.xyz/iptv2A.php?id=2
 TVB PLUS,http://o11.163189.xyz/stream/tvb/tvbp/
 TVBplus,http://cdn.163189.xyz/live/?id=tvbp
-TVBJ1,http://iptv.4666888.xyz/iptv2A.php?id=26
 TntSports3,http://iptv.4666888.xyz/iptv2A.php?id=3
 TVB plus备3,https://vdm6-hw.nbgdsygs.com/live/h6-2.flv
 TVB翡翠,http://iptv.4666888.xyz/iptv2A.php?id=34
 TVB翡翠(馬來),http://iptv.4666888.xyz/iptv2A.php?id=28
+TVB翡翠劇集,http://iptv.4666888.xyz/iptv2A.php?id=33
+TVB-獎門人,http://iptv.4666888.xyz/iptv2A.php?id=31
 TVB明珠,http://iptv.4666888.xyz/iptv2A.php?id=29
 TVB星河,https://cdn10.163189.xyz/stream/163189/xinghe/
 TVB星河,http://o11.163189.xyz/stream/live/tvbxh/
 TVB娱乐新闻,http://iptv.4666888.xyz/iptv2A.php?id=36
+<<<<<<< HEAD
 VIUTV,https://cdn10.163189.xyz/stream/163189/viu/
 VIUTVSIX,https://cdn10.163189.xyz/stream/163189/viu6/
 astroFootball,http://iptv.4666888.xyz/iptv2A.php?id=4
@@ -164,14 +183,46 @@ astroFootball,http://iptv.4666888.xyz/iptv2A.php?id=4
 凤凰香港台,https://cdn6.163189.xyz/163189/fhhk
 鳳凰中文,http://iptv.4666888.xyz/iptv2A.php?id=27
 凤凰中文,http://r.jdshipin.com/cCCzW
+=======
+案发现场,https://isus.cc/php/huya.php?id=11352975
+贝,https://315600.xyz/dl/douyu.php?id=9252708
+博斯運動1,http://iptv.4666888.xyz/iptv2A.php?id=6
+贝英文,https://isus.cc/php/huya.php?id=30080237
+成龙,https://isus.cc/php/huya.php?id=11342386
+重温经典,http://api.kkhk.itv888.vip:8080/streams/214856d804c/index.m3u8
+大片,https://isus.cc/php/huya.php?id=11352869
+大片全明星阵容,https://isus.cc/php/huya.php?id=21059563
+狄仁杰,https://isus.cc/php/huya.php?id=11352958
+动物星球,http://61.221.215.25:8800/hls/57/index.m3u8
+电影,https://isus.cc/php/huya.php?id=11352893
+谍影重重,https://isus.cc/php/huya.php?id=22889219
+德英文,https://isus.cc/php/huya.php?id=21059578
+电影最TOP,https://isus.cc/php/huya.php?id=11774959
+大自然纪录片,https://315600.xyz/dl/douyu.php?id=4837387
+动作悬疑片,https://isus.cc/php/huya.php?id=11602077
+翡翠剧集台,https://6.cdn.loc.cc/163189.php?id=tvbd
+翡翠台,http://cdn9.163189.xyz/smt1.1.php?id=jade_twn
+凤凰香港,http://r.jdshipin.com/yDoTN
+凤凰香港2,http://api.kkhk.itv888.vip:8080/streams/mty4v56ud39/index.m3u8
+凤凰香港Pdtv,http://rihou.cc:555/tv/[Pd]凤凰香港
+凤凰香港电视家,http://huhu11.a1.luyouxia.net:26894/play/电视家/电视家.php?id=20065
+凤凰香港台,https://cdn6.163189.xyz/163189/fhhk
+凤凰中文,http://r.jdshipin.com/cCCzW
+鳳凰中文,http://iptv.4666888.xyz/iptv2A.php?id=27
+>>>>>>> 8146fc53cc366f549ac8953256e39b449520673e
 凤凰中文Pdtv,http://rihou.cc:555/tv/[Pd]凤凰中文
 凤凰中文电视家,http://huhu11.a1.luyouxia.net:26894/play/电视家/电视家.php?id=20063
 凤凰中文台,https://cdn6.163189.xyz/163189/fhzw
 凤凰资讯,http://r.jdshipin.com/0Rp07
+<<<<<<< HEAD
+=======
+凤凰资讯2,http://api.kkhk.itv888.vip:8080/streams/wzt3qbit80m/index.m3u8
+>>>>>>> 8146fc53cc366f549ac8953256e39b449520673e
 凤凰资讯Pdtv,http://rihou.cc:555/tv/[Pd]凤凰资讯
 凤凰资讯电视家,http://huhu11.a1.luyouxia.net:26894/play/电视家/电视家.php?id=20064
 凤凰资讯台,https://cdn6.163189.xyz/163189/fhzx
 广东公共酒店,http://183.62.8.58:50085/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
+<<<<<<< HEAD
 广东民生,http://hongzhijiaoyu.net:8188/udp/239.77.0.225:5146
 广东民生,http://www.8888866.xyz:10000/udp/239.77.0.225:5146
 广东民生,http://183.236.43.98:4014/udp/239.77.0.225:5146
@@ -179,16 +230,30 @@ astroFootball,http://iptv.4666888.xyz/iptv2A.php?id=4
 广东珠江,https://gx.484947.xyz/PLTV/77777777/224/3221225717/index.m3u8?servicetype=1&&IASHttpSessionId=RR778520250111113355399717&ispcode=1108
 功夫台,https://cdn6.163189.xyz/163189/yzwx
 怪兽系列 巨蟒和大白鲨来袭,https://isus.cc/php/huya.php?id=21059554
+=======
+广东民生,http://183.236.43.98:4111/udp/239.77.0.225:5146
+广东民生,http://www.8888866.xyz:10000/udp/239.77.0.225:5146
+广东民生,http://183.236.43.98:4014/udp/239.77.0.225:5146
+广东民生,http://hongzhijiaoyu.net:8188/udp/239.77.0.225:5146
+广东珠江,https://gx.484947.xyz/PLTV/77777777/224/3221225717/index.m3u8?servicetype=1&&IASHttpSessionId=RR778520250111113355399717&ispcode=1108
+高清修复看经典,https://isus.cc/php/huya.php?id=24380318
+>>>>>>> 8146fc53cc366f549ac8953256e39b449520673e
 广州南国都市,http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
 广州新闻频道,http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
+广州综合,http://php.jdshipin.com:8880/gztv.php?id=zhonghe
 广州综合频道,http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8
+洪金宝系列,https://isus.cc/php/huya.php?id=11342427
 华丽翡翠,http://cdn9.163189.xyz/smt1.1.php?id=Tvbjade
-寰宇新闻,http://huhu11.a1.luyouxia.net:26894/play/HK-MY/proxy.php?id=globalnews
 寰宇新闻,http://huhu11.a1.luyouxia.net:26894/play/电视家/电视家.php?id=20176
+<<<<<<< HEAD
+=======
+经典的破案爱情,https://isus.cc/php/huya.php?id=11336578
+>>>>>>> 8146fc53cc366f549ac8953256e39b449520673e
 纪录,https://315600.xyz/dl/douyu.php?id=454867
 纪录2,https://315600.xyz/dl/douyu.php?id=4837387
 巨石强森系列,https://isus.cc/php/huya.php?id=21059581
 杰森·斯坦森,https://isus.cc/php/huya.php?id=21059588
+<<<<<<< HEAD
 金鹰纪实,http://rrs03.hw.gmcc.net:8088/PLTV/81/224/3221226667/1.m3u8
 刘德华电影,https://isus.cc/php/huya.php?id=11342424
 李连杰功夫大片,https://isus.cc/php/huya.php?id=11342390
@@ -278,22 +343,48 @@ nusrt,http://gwerdv433vr.otttv.pw/iptv/DZWL85QKSY8Q55/31716/index.m3u8
 千禧经典,http://cdn9.163189.xyz/smt1.1.php?id=Tvbclassic
 千禧经典,http://iptv.4666888.xyz/iptv2A.php?id=22
 千禧经典台,http://o11.163189.xyz/stream/live/tvbc/
+=======
+科幻系列 硬核浪漫,https://isus.cc/php/huya.php?id=11352895
+刘德华电影,https://isus.cc/php/huya.php?id=11342424
+老电影,https://isus.cc/php/huya.php?id=23017124
+李连杰功夫大片,https://isus.cc/php/huya.php?id=11342390
+明珠台,http://cdn9.163189.xyz/smt1.1.php?id=pearl_twn
+nusrt,http://gwerdv433vr.otttv.pw/iptv/DZWL85QKSY8Q55/31716/index.m3u8
+枪林弹雨战争片,https://isus.cc/php/huya.php?id=22295876
+千禧经典,http://cdn9.163189.xyz/smt1.1.php?id=Tvbclassic
+千禧经典,http://iptv.4666888.xyz/iptv2A.php?id=22
+史诗级纪录,https://isus.cc/php/huya.php?id=26355851
+>>>>>>> 8146fc53cc366f549ac8953256e39b449520673e
 汤姆克鲁斯史泰龙,https://isus.cc/php/huya.php?id=11352959
 探索,http://61.221.215.25:8800/hls/50/index.m3u8
 wwwe,http://iptv.4666888.xyz/iptv2A.php?id=5
 武僧电影·天下武功出少林,https://isus.cc/php/huya.php?id=11602055
 无线 新闻,http://cdn9.163189.xyz/smt1.1.php?id=inews_twn
 五星体育,http://nn.7x9d.cn/xzc2.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA2LjAuMC4wIFNhZmFyaS81MzcuMzY=&hls=aHR0cDovLzYxLjE2OS40Ny4xMDA6MTAwODEvaGxzLzQ4L2luZGV4Lm0zdTg
+<<<<<<< HEAD
 无线新闻Pdtv,http://rihou.cc:555/tv/[Pd]无线新闻
 無綫新聞台,https://cdn6.163189.xyz/163189/wxxw
+=======
+武侠·帅到飞起,https://isus.cc/php/huya.php?id=11352897
+>>>>>>> 8146fc53cc366f549ac8953256e39b449520673e
 星河,http://cdn9.163189.xyz/smt1.1.php?id=Xinhe
+系列,https://isus.cc/php/huya.php?id=22897556
 新视觉,http://120.76.248.139/live/bfgd/4200000249.m3u8
+<<<<<<< HEAD
 娛樂新聞台,https://cdn6.163189.xyz/163189/ylxw
 有线新闻Pdtv,http://rihou.cc:555/tv/[Pd]有线新闻
 粤语,https://315600.xyz/dl/douyu.php?id=6588759
 粤语电影,https://isus.cc/php/huya.php?id=11352894
 重案六组,https://isus.cc/php/huya.php?id=11336587
 中天新闻测试,http://huhu11.a1.luyouxia.net:26894/play/HK-MY/proxy.php?id=ctinewshd
+=======
+有线新闻Pdtv,http://rihou.cc:555/tv/[Pd]有线新闻
+粤语,https://315600.xyz/dl/douyu.php?id=6588759
+粤语2,https://315600.xyz/dl/douyu.php?id=6478650
+粤语电影,https://isus.cc/php/huya.php?id=11352894
+重案六组,https://isus.cc/php/huya.php?id=11336587
+灾难大片,https://isus.cc/php/huya.php?id=11352887
+>>>>>>> 8146fc53cc366f549ac8953256e39b449520673e
 中天新闻电视家,http://huhu11.a1.luyouxia.net:26894/play/电视家/电视家.php?id=20173
 甄子丹,https://isus.cc/php/huya.php?id=11352935
 
