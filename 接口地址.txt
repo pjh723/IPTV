@@ -1,0 +1,52 @@
+
+所有的接口我都测试了，可以正常加载，如果有无法加载的，首先检查客户端。魔改版本无法使用源！！！
+推荐使用 ok影视。如果还有问题，直接找我反馈。qq群 1036923422  
+ 
+推荐使用：
+星河标准：http://116.196.116.76/tv   
+星河简单：http://116.196.116.76/stv
+标准接口 需要配置网盘，基本都是4k资源，适合高端电视盒子
+简单接口 不用配置网盘，无4k资源，适合中低端电视盒子，填入即用
+直播接口：上面的源里面就有
+ 
+      
+单仓： 
+http://116.196.116.76/tv    #星河标准接口-需要配置网盘，基本都是4k资源
+http://116.196.116.76/stv   #星河简单接口-不用配置网盘，直接用，无4k资源，适合低端电视，盒子。
+ http://www.饭太硬.net/tv  # 饭太硬接口
+ http://我不是.摸鱼儿.com # 摸鱼儿接口
+http://肥猫.com   # 肥猫接口
+ http://fty.xxooo.cf/tv # 神秘哥哥们备用接口
+ https://毒盒.com/tv/ # 毒盒
+ https://www.yingm.cc/dm/dm.json    # 动漫城接口
+ http://home.jundie.top:81/top98.json   # 俊佬接口
+ https://cdn.gitmirror.com/bb/xduo/libs/master/index.json   # 道长接口
+ https://cnb.cool/fish2018/pg/-/git/raw/master/jsm.json # PG接口
+http://tvbox.xn--4kq62z5rby2qupq9ub.top/    # 王小二放牛娃接口
+ https://ghfast.top/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json    # 南风接口
+ https://tv.菜妮丝.top # 菜妮丝接口
+ https://api.hgyx.vip/hgyx.json # HG接口
+http://mitvbox.xyz/%E5%B0%8F%E7%B1%B3/DEMO.json # 小米
+ http://xhztv.top/xhz   # 小盒子单仓
+ http://xhztv.top/4k.json   # 小盒子4K
+https://gh-proxy.com/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json # 潇洒接口
+https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json   # 香雅情
+http://ok321.top/tv # OK影视内部接口
+ http://ok321.top/ok    # OK影视公开接口
+http://ztha.top/TVBox/GYCK.json # 挺好分享
+ https://gh-proxy.com/https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json  # 宝盒VIP
+ https://git.acwing.com/iduoduo/orange/-/raw/main/config.bin     # 多多
+ https://www.252035.xyz/z/FongMi.json   # 真心
+ http://www.meowtv.vip/tvbox.json   # 喵影视
+ http://fmys.top/fmys.json  # 驸马
+ https://gitee.com/yiwu369/6758/raw/master/%E9%9D%92%E9%BE%99/1.json    # 青龙
+ https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/000.json # 分享
+http://cdn.qiaoji8.com/tvbox.json   #技巧
+https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json   #南风
+     
+多仓： 
+ https://www.iyouhun.com/tv/dc      # 游魂多仓
+ http://xhztv.top/dc/       # 小盒子多仓
+ http://xhztv.top/DC.txt    # 小盒子多仓（备）
+ https://qixing.myhkw.com/DC.txt    # 七星宝盒
+ http://xmbjm.fh4u.org/dc.txt       # 拾光多仓
